@@ -71,7 +71,7 @@ html, body {
     max-width: 1200px; /* Restrict the maximum width */
     height: calc(100% - 80px); /* Leave a margin from the top and bottom */
     max-height: calc(100vh - 240px); /* Ensure it doesn't exceed the screen height */
-    background-color: #FFFFFF; /* White box */
+    background-color: #FFFDF3; /* White box */
     opacity: 0.8; /* Slight transparency */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
