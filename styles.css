@@ -17,11 +17,11 @@ body {
   overflow: hidden;
 }
 
-/* Center translucent box */
+/* Translucent Box in the Center */
 .translucent-box {
   position: absolute;
-  width: 60%;
-  height: 80%;
+  width: 50%;
+  height: 70%;
   background-color: rgba(101, 203, 218, 0.8); /* Sky Blue with 80% opacity */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -30,7 +30,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Cloud styles */
+/* Cloud Styles */
 .cloud {
   position: absolute;
   background-color: #FFFDF3; /* Milk */
@@ -47,38 +47,11 @@ body {
   height: 60px;
 }
 
-/* Green land sections */
+/* Green Land Sections */
 .green-land {
   position: absolute;
   background-color: #88D8B0; /* Pearl Aqua */
   border-radius: 50px;
-}
-
-/* Cloud positioning */
-.cloud:nth-child(2) {
-  top: 10%;
-  left: 5%;
-}
-
-.cloud:nth-child(3) {
-  top: 20%;
-  right: 10%;
-}
-
-.cloud:nth-child(4) {
-  bottom: 15%;
-  left: 20%;
-}
-
-.cloud:nth-child(5) {
-  bottom: 30%;
-  right: 25%;
-}
-
-/* Green land positioning */
-.green-land.large {
-  width: 400px;
-  height: 100px;
 }
 
 .green-land.small {
@@ -86,27 +59,12 @@ body {
   height: 60px;
 }
 
-.green-land:nth-child(6) {
-  top: 30%;
-  left: 10%;
+.green-land.large {
+  width: 400px;
+  height: 100px;
 }
 
-.green-land:nth-child(7) {
-  top: 60%;
-  right: 5%;
-}
-
-.green-land:nth-child(8) {
-  bottom: 20%;
-  left: 5%;
-}
-
-.green-land:nth-child(9) {
-  bottom: 10%;
-  right: 15%;
-}
-
-/* Back button */
+/* Back Button */
 .back-button {
   position: absolute;
   top: 20px;
