@@ -1,13 +1,12 @@
-// Select the toggle input
-const toggleInput = document.getElementById('page-toggle');
+.image-container {
+    width: 100%; /* Adjust based on your design */
+    display: flex; /* Center the image horizontally */
+    justify-content: center;
+    margin: 0 auto;
+}
 
-// Add event listener for toggle
-toggleInput.addEventListener('change', (e) => {
-  if (e.target.checked) {
-    alert('Switching to Verified Page');
-    window.location.href = 'verified.html'; // Replace with your verified page URL
-  } else {
-    alert('Switching to Community Page');
-    window.location.href = 'community.html'; // Replace with your community page URL
-  }
-});
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    max-width: 1440px; /* Set the maximum width if necessary */
+    height: auto; /* Maintain aspect ratio */
+}
