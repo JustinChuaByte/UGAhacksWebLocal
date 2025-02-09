@@ -5,12 +5,13 @@ html, body {
 }
 
 .fullscreen-image {
-    background: url('ComBg1.png') no-repeat center center fixed;
-    background-size: cover; /* Ensures the image scales proportionally to cover the entire screen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh;
     position: absolute;
-    z-index: -1; /* Ensure the background image is behind other elements */
+    z-index: -1;
 }
 
 .top-bar {
