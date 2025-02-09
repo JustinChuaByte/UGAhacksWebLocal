@@ -1,84 +1,97 @@
-/* styles.css */
+/* styles.css /
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1583D1; /* Bright Navy Blue */
+  background-color: #FFFDF3; / Milk /
 }
 
 .container {
   position: relative;
   width: 100%;
+  max-width: 1200px;
   height: 100%;
-  background-color: #1583D1; /* Bright Navy Blue */
   overflow: hidden;
 }
 
-/* Translucent Box in the Center */
-.translucent-box {
-  position: absolute;
-  width: 50%;
-  height: 70%;
-  background-color: rgba(101, 203, 218, 0.8); /* Sky Blue with 80% opacity */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Cloud Styles */
-.cloud {
-  position: absolute;
-  background-color: #FFFDF3; /* Milk */
-  border-radius: 50px;
-}
-
-.cloud.small {
-  width: 120px;
-  height: 40px;
-}
-
-.cloud.large {
-  width: 200px;
-  height: 60px;
-}
-
-/* Green Land Sections */
-.green-land {
-  position: absolute;
-  background-color: #88D8B0; /* Pearl Aqua */
-  border-radius: 50px;
-}
-
-.green-land.small {
-  width: 200px;
-  height: 60px;
-}
-
-.green-land.large {
-  width: 400px;
-  height: 100px;
-}
-
-/* Back Button */
-.back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: #F96E5A; /* Bittersweet */
-  width: 50px;
-  height: 50px;
+.top-bar {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  color: #FFFDF3; /* Milk */
-  font-size: 24px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1583D1; / Bright Navy Blue /
+  color: #FFFDF3; / Milk /
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-family: 'Kalem', sans-serif;
+  font-size: 100px;
   font-weight: bold;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle .slider {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: #FFFDF3; / Milk /
+  border-radius: 25px;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.toggle .slider:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background-color: #1583D1; / Bright Navy Blue /
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #88D8B0; / Pearl Aqua /
+}
+
+input:checked + .slider:after {
+  transform: translateX(25px);
+}
+
+.background {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('beach-background.png') no-repeat center center/cover; / Beach background /
+  z-index: -1;
+}
+
+.white-box {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1000px;
+  height: 60%;
+  background-color: rgba(255, 253, 243, 0.8); / Milk at 80% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
