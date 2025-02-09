@@ -1,0 +1,100 @@
+/* styles.css /
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFFDF3; / Milk /
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  background-color: #FFFDF3; / Milk /
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blue-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1583D1; / Bright Navy Blue /
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.translucent-box {
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  background-color: rgba(101, 203, 218, 0.8); / Sky Blue with 80% opacity /
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.cloud {
+  position: absolute;
+  border-radius: 50px;
+}
+
+.green-cloud {
+  background-color: #88D8B0; / Pearl Aqua /
+}
+
+.white-cloud {
+  background-color: #FFFDF3; / Milk /
+}
+
+.cloud.small {
+  width: 60px;
+  height: 20px;
+}
+
+.cloud:not(.small) {
+  width: 120px;
+  height: 40px;
+}
+
+/ Cloud positioning /
+.cloud:nth-child(2) {
+  top: 50px;
+  left: 50px;
+}
+
+.cloud:nth-child(3) {
+  top: 80px;
+  right: 80px;
+}
+
+.cloud:nth-child(4) {
+  bottom: 100px;
+  left: 100px;
+}
+
+.cloud:nth-child(5) {
+  bottom: 50px;
+  right: 50px;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #F96E5A; / Bittersweet /
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #FFFDF3; / Milk */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+} 
