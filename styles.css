@@ -25,10 +25,35 @@ html, body {
 }
 
 .top-bar .toggle-button {
+    width: 100px;
+    height: 50px;
+    background-color: #ddd; /* Light gray to contrast with the blue bar */
+    border-radius: 25px; /* Rounded ends */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
-    left: 20px; /* Distance from the left edge of the blue bar */
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically within the blue bar */
+    left: 20px; /* Align to the left with a margin */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+}
+
+.toggle-button .toggle-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #1583D1; /* Blue to match the bar */
+    border-radius: 50%; /* Fully round */
+    transition: all 0.3s ease; /* Smooth movement */
+    position: relative;
+    left: 5px; /* Default position on the left */
+    border: 2px solid #ddd; /* Light gray border for visibility */
+}
+
+.toggle-button.active .toggle-circle {
+    left: 55px; /* Move the circle to the right */
 }
 
 .community-title {
