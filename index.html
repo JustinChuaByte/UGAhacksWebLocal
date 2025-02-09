@@ -23,10 +23,35 @@
             border-radius: 10px; /* Optional: Rounded corners */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             margin: 20px; /* Ensure it doesn’t touch the edges of the screen */
+            display: flex; /* Enable flexbox for centering the button */
+            justify-content: center; /* Horizontally center the button */
+            align-items: center; /* Vertically center the button */
+        }
+
+        .login-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #FFFFFF; /* White text */
+            background-color: #000000; /* Black button */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #333333; /* Slightly lighter black on hover */
+        }
+
+        .login-button:active {
+            background-color: #1a1a1a; /* Darker black when active */
         }
     </style>
 </head>
 <body>
-    <div class="center-box"></div>
+    <div class="center-box">
+        <button class="login-button">Login</button>
+    </div>
 </body>
 </html>
