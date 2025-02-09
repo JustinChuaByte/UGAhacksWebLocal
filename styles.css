@@ -1,11 +1,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensure body always fills the screen height */
+    height: 100%;
+    min-height: 100vh; /* Prevent shrinking of the body */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1583D1; /* Background color */
+    background-color: #1583D1; /* Ensure the background color is consistent */
+    overflow: hidden; /* Prevent scrolling or unexpected overflow */
 }
 
 .fullscreen-image {
@@ -13,9 +16,41 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Cover the entire viewport */
-    background-image: url('LogBg.png'); /* Replace with your image path */
-    background-size: cover; /* Ensure the image scales proportionally */
-    background-position: center; /* Center the image */
-    z-index: -1; /* Place it behind other elements */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the image stays behind other elements */
+}
+
+.login-box {
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1; /* Ensure it is above the fullscreen image */
+}
+
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000; /* Black text */
+    background-color: #FFFFFF; /* White background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #f0f0f0; /* Slightly lighter background */
+}
+
+.login-button:active {
+    background-color: #e0e0e0; /* Darker shade when active */
 }
