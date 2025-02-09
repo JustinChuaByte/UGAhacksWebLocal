@@ -5,14 +5,12 @@ html, body {
 }
 
 .fullscreen-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    background: url('LogBg.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image scales proportionally to cover the entire screen */
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* Ensure the image stays behind other elements */
+    height: 100vh; /* 100% of the viewport height */
+    position: absolute;
+    z-index: -1; /* Ensure the background image is behind other elements */
 }
 
 .login-box {
