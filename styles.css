@@ -30,7 +30,6 @@ html, body {
     justify-content: center;
     align-items: center;
     z-index: 1; /* Above the background image */
-    margin: 20px; /* Margin to prevent it from extending the full length */
 }
 
 .login-button {
