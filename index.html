@@ -37,6 +37,14 @@
         const images = ['ComBg1.png', 'ComBg2.png']; // List of background images
         const randomImage = images[Math.floor(Math.random() * images.length)];
         document.querySelector('.fullscreen-image').style.backgroundImage = `url('${randomImage}')`;
+
+        // JavaScript for moving the toggle button ball
+        const toggleButton = document.querySelector('.toggle-button');
+        const toggleCircle = document.querySelector('.toggle-circle');
+
+        toggleButton.addEventListener('click', () => {
+            toggleButton.classList.toggle('active'); // Toggle the 'active' class
+        });
     </script>
 </body>
 </html>
