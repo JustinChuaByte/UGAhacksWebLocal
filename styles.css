@@ -44,7 +44,7 @@ html, body {
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     gap: 20px; /* Space between rectangles */
     margin: 0 auto; /* Remove extra space and center the grid */
-    width: 100%;
+    width: calc(100% - 40px); /* Add margin from sides of the screen */
     max-width: 1920px; /* Restrict grid width to 1920px */
     height: calc(100vh - 160px); /* Adjust height to fit within viewport minus the blue bar */
     align-content: space-between; /* Evenly distribute rows within available height */
@@ -55,7 +55,7 @@ html, body {
 .grid-item {
     width: 100%;
     height: calc((100vh - 160px - 80px) / 4); /* Adjust height to fit 4 rows evenly */
-    max-width: calc((1920px - 60px) / 4); /* Restrict the width of each box to fit within 1920px total */
+    max-width: calc((1920px - 100px) / 4); /* Adjust for grid-container's side margins */
     background-color: #FFFDF3;
     opacity: 0.8;
     border-radius: 10px; /* Optional: Rounded corners */
