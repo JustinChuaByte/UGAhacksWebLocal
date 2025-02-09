@@ -5,7 +5,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFDF3;
+    background-color: #1583D1; /* Updated to requested background color */
 }
 
 .fullscreen-image {
@@ -36,8 +36,8 @@ html, body {
 .login-button {
     padding: 10px 20px;
     font-size: 16px;
-    color: #F96E5A; /* White text */
-    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    background-color: #F96E5A; /* Updated to requested color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -46,9 +46,9 @@ html, body {
 }
 
 .login-button:hover {
-    background-color: #333333; /* Slightly lighter hover effect */
+    background-color: #FF8970; /* Slightly lighter hover effect */
 }
 
 .login-button:active {
-    background-color: #1a1a1a; /* Darker shade when active */
+    background-color: #D85A45; /* Darker shade when active */
 }
