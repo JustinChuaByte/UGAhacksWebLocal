@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Make sure the body takes up the full height of the screen */
+    background-color: #FFFDF3; /* Set the full screen background color */
+}
+
+.top-bar {
+    width: 100%;
+    height: 160px;
+    background-color: #1583D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10; /* Ensure it stays above the background */
+}
+
+.top-bar .toggle-button {
+    width: 100px;
+    height: 50px;
+    background-color: #ddd; /* Light gray to contrast with the blue bar */
+    border-radius: 25px; /* Rounded ends */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 20px; /* Align to the left with a margin */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+    z-index: 15; /* Ensure it is always above the blue bar */
+}
+
+.toggle-button .toggle-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #1583D1; /* Blue to match the bar */
+    border-radius: 50%; /* Fully round */
+    transition: all 0.3s ease; /* Smooth movement */
+    position: relative;
+    left: 5px; /* Default position on the left */
+    border: 2px solid #ddd; /* Light gray border for visibility */
+}
+
+.toggle-button.active .toggle-circle {
+    left: 55px; /* Move the circle to the right */
+}
+
+.verified-title {
+    font-family: 'Kalem', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: #575092; /* Updated text color */
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between rectangles */
+    margin: 0 auto; /* Remove extra space and center the grid */
+    width: calc(100% - 40px); /* Add margin from sides of the screen */
+    max-width: 1920px; /* Restrict grid width to 1920px */
+    height: calc(100vh - 160px); /* Adjust height to fit within viewport minus the blue bar */
+    align-content: space-between; /* Evenly distribute rows within available height */
+    padding-top: 20px; /* Minimal padding below the blue bar */
+    box-sizing: border-box;
+}
+
+.grid-item {
+    width: 100%;
+    height: calc((100vh - 160px - 80px) / 4); /* Adjust height to fit 4 rows evenly */
+    max-width: calc((1920px - 100px) / 4); /* Adjust for grid-container's side margins */
+    background-color: #FFFDF3;
+    opacity: 0.8;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    margin: auto;
+}
