@@ -9,14 +9,24 @@
             margin: 0;
             padding: 0;
             height: 100%; /* Ensure the body fills the entire viewport */
-        }
-
-        body {
+            display: flex; /* Enable flexbox for centering */
+            justify-content: center; /* Horizontally center the box */
+            align-items: center; /* Vertically center the box */
             background: url('LogBg.png') no-repeat center center fixed; /* Set the image as background */
             background-size: cover; /* Make sure it scales proportionally to cover the screen */
+        }
+
+        .center-box {
+            width: 400px; /* Width of the box */
+            height: 300px; /* Height of the box */
+            background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin: 20px; /* Ensure it doesn’t touch the edges of the screen */
         }
     </style>
 </head>
 <body>
+    <div class="center-box"></div>
 </body>
 </html>
