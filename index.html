@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Background</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Background Image</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure the body fills the entire viewport */
+        }
+
+        body {
+            background: url('LogBg.png') no-repeat center center fixed; /* Set the image as background */
+            background-size: cover; /* Make sure it scales proportionally to cover the screen */
+        }
+    </style>
 </head>
 <body>
-    </div>
-        <div class="login-box">
-        <button class="login-button" onclick="window.location.href='Community.html'">Login</button>
-    <div class="fullscreen-image"></div>
-    </div>
 </body>
 </html>
