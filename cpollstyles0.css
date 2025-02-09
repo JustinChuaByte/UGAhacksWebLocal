@@ -65,26 +65,5 @@ html, body {
     margin: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px; /* Space between rectangles */
-    margin: 0 auto; /* Remove extra space and center the grid */
-    width: calc(100% - 40px); /* Add margin from sides of the screen */
-    max-width: 1920px; /* Restrict grid width to 1920px */
-    height: calc(100vh - 160px); /* Adjust height to fit within viewport minus the blue bar */
-    align-content: space-between; /* Evenly distribute rows within available height */
-    padding-top: 20px; /* Minimal padding below the blue bar */
-    box-sizing: border-box;
-}
 
-.grid-item {
-    width: 100%;
-    height: calc((100vh - 160px - 80px) / 4); /* Adjust height to fit 4 rows evenly */
-    max-width: calc((1920px - 100px) / 4); /* Adjust for grid-container's side margins */
-    background-color: #FFFDF3;
-    opacity: 0.8;
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
-    margin: auto;
 }
