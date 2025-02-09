@@ -43,48 +43,22 @@ html, body {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     gap: 20px; /* Space between rectangles */
-    margin: 160px auto 0; /* Start below the blue bar */
+    margin: 0 auto; /* Remove extra space and center the grid */
     width: 100%;
     max-width: 1920px; /* Restrict grid width to 1920px */
     height: calc(100vh - 160px); /* Adjust height to fit within viewport minus the blue bar */
-    max-height: calc(100vh - 160px); /* Ensure the grid does not exceed the visible height */
     align-content: space-between; /* Evenly distribute rows within available height */
+    padding-top: 20px; /* Minimal padding below the blue bar */
+    box-sizing: border-box;
 }
 
 .grid-item {
     width: 100%;
-    height: calc((100vh - 160px - 60px) / 4); /* Adjust height to fit 4 rows with spacing */
+    height: calc((100vh - 160px - 80px) / 4); /* Adjust height to fit 4 rows evenly */
     max-width: calc((1920px - 60px) / 4); /* Restrict the width of each box to fit within 1920px total */
     background-color: #FFFDF3;
     opacity: 0.8;
     border-radius: 10px; /* Optional: Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
     margin: auto;
-}
-
-.toggle-button {
-    width: 100px;
-    height: 50px;
-    background-color: #ddd;
-    border-radius: 25px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.toggle-button .toggle-circle {
-    width: 40px;
-    height: 40px;
-    background-color: #FFFDF3;
-    border-radius: 50%;
-    position: absolute;
-    transition: all 0.3s ease;
-    left: 5px; /* Default position on the left */
-}
-
-.toggle-button.active .toggle-circle {
-    left: 55px; /* Moves to the right */
 }
