@@ -5,7 +5,7 @@ html, body {
 }
 
 .fullscreen-image {
-    background: url('ComBg1.png') no-repeat center center fixed;
+    background: url('rectangle6.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image scales proportionally to cover the entire screen */
     width: 100%;
     height: 100vh; /* 100% of the viewport height */
@@ -21,6 +21,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10; /* Ensure it stays on top of other content */
 }
 
 .community-title {
@@ -29,4 +30,23 @@ html, body {
     font-size: 100px;
     color: white;
     margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between rectangles */
+    margin: 200px auto 0; /* Push the grid below the blue bar */
+    width: 90%; /* Restrict width to prevent edge overflow */
+    max-width: 1440px;
+}
+
+.grid-item {
+    width: 525px;
+    height: 225px;
+    background-color: #FFFDF3;
+    opacity: 0.8;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    margin: auto;
 }
