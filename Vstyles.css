@@ -75,7 +75,6 @@ html, body {
     height: calc((100vh - 160px - 80px) / 4); /* Adjust height to fit 4 rows evenly */
     max-width: calc((1920px - 100px) / 4); /* Adjust for grid-container's side margins */
     background-color: #D9D9D9;
-    opacity: 0.8;
     border-radius: 10px; /* Optional: Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
     margin: auto;
