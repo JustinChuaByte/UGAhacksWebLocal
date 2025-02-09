@@ -8,7 +8,7 @@ html, body {
 .top-bar {
     width: 100%;
     height: 160px;
-    background-color: #575092; /* Match the Verified style */
+    background-color: #1583D1; /* Match the Verified style */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ html, body {
 .toggle-button .toggle-circle {
     width: 40px;
     height: 40px;
-    background-color: #575092; /* Match the top bar */
+    background-color: #1583D1; /* Match the top bar */
     border-radius: 50%;
     transition: all 0.3s ease;
     position: relative;
