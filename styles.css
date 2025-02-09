@@ -5,7 +5,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1583D1; /* Updated to requested background color */
 }
 
 .fullscreen-image {
