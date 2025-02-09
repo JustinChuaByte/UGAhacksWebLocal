@@ -24,6 +24,13 @@ html, body {
     z-index: 10; /* Ensure it stays above the background */
 }
 
+.top-bar .toggle-button {
+    position: absolute;
+    left: 20px; /* Distance from the left edge of the blue bar */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically within the blue bar */
+}
+
 .community-title {
     font-family: 'Kalem', sans-serif;
     font-weight: bold;
@@ -53,4 +60,31 @@ html, body {
     border-radius: 10px; /* Optional: Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
     margin: auto;
+}
+
+.toggle-button {
+    width: 100px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button .toggle-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #FFFDF3;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s ease;
+    left: 5px; /* Default position on the left */
+}
+
+.toggle-button.active .toggle-circle {
+    left: 55px; /* Moves to the right */
 }
